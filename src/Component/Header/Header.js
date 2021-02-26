@@ -17,10 +17,12 @@ const Header = () => {
             </div>
 
             <div className="header_nav">
+                <Link to='/login'>
                 <div className="header_option">
                     <span className="header_optionLineOne">Hello Guest</span>
                     <span className="header_optionLineTwo">Sign In</span>
                 </div>
+                </Link>
                 <div className="header_option">
                 <span className="header_optionLineOne">Retruns</span>
                     <span className="header_optionLineTwo"> & Orders</span>
