@@ -2,9 +2,12 @@ import React from 'react';
 import Product from '../Product/Product';
 import './Home.css';
 import {Link} from "react-router-dom";
+import Header from '../Header/Header';
 
 const Home = () => {
     return (
+        <>
+        <Header />
         <div className="home">
             <div className="home_container">
                 <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Hero/Fuji_TallHero_45M_v2_1x._CB432458380_.jpg" alt="Amazon Background" className="home_image" />
@@ -28,7 +31,7 @@ const Home = () => {
                 <div className="home_row">
                 <Product
                 id="3"
-                 title="YAMAY Smart Watch, Watches for Men Women Fitness Tracker Blood Pressure Monitor Blood Oxygen Meter Heart Rate Monitor IP68 Waterproof, Smartwatch Compatible with iPhone Samsung Android Phones (Black)"
+                 title="YAMAY Smart Watch, Watches for Men Women Fitness Tracker With Blood Pressure Monitor, Oxygen Meter Heart Rate Monitor IP68 Waterproof (Black)"
                  price={44.99}
                  image="https://images-na.ssl-images-amazon.com/images/I/51g0J2ZLH1L._AC_SX679_.jpg"
                  rating={3}
@@ -36,7 +39,7 @@ const Home = () => {
 
                 <Product
                 id="4"
-                title="Samsung Electronics Samsung Galaxy S21 5G | Factory Unlocked Android Cell Phone | US Version 5G Smartphone | Pro-Grade Camera, 8K Video, 64MP High Res | 128GB, Phantom Violet (SM-G991UZVAXAA)"
+                title="Samsung Galaxy S21 5G | Factory Unlocked US Version 5G Smartphone | 128GB, Phantom Violet"
                 price={799.99}
                 image="https://images-na.ssl-images-amazon.com/images/I/81Kt5PSPtrL._AC_SY741_.jpg"
                 rating={5} />
@@ -59,6 +62,7 @@ const Home = () => {
                 </div>
             </div>
         </div>
+        </>
     );
 };
 

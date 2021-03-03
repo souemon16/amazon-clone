@@ -11,6 +11,9 @@
     background-color: white;
     z-index: 1;
 }
+.product:hover{
+    box-shadow: 1px 1px 16px #111;
+}
 .product > img{
     max-height: 200px;
     width: 100%;
@@ -25,7 +28,7 @@
     color: #111;
 }
 .product_price{
-    margin-top: 5px;
+    margin-top: -15px;
 }
 .product_info{
     height: 100px;
@@ -34,4 +37,5 @@
 .product_rating{
     display: flex;
     color: orange;
+    margin-top: -15px;
 }

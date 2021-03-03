@@ -12,7 +12,7 @@ const Login = () => {
         e.preventDefault();
         // Firebase Login 
         auth.signInWithEmailAndPassword(email, password)
-        .auth(auth => {
+        .then(auth => {
             history.push('/')
         })
         .catch(error => alert(error.message))
